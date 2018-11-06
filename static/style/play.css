@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding: 0;margin: 0;}
+.banner{
+	width: 580px;
+	height: 350px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+.banner div{
+width: 3540px;
+	height: 350px;
+	animation: playimg 10s linear infinite;
+}
+.banner div:hover{
+	animation-play-state: running;
+}
+.banner div img{
+	width: 590px;
+	height: 350px;
+	float: left;
+}
+/*动画的关键帧的集合*/
+@keyframes playimg{
+	0%,15%{
+		margin-left: 0px;
+	}
+	20%,35%{
+		margin-left: -590px;
+	}
+	40%,55%{
+		margin-left: -1180px;
+	}
+	60%,75%{
+		margin-left: -1770px;
+	}
+	80%,95%{
+		margin-left: -2360px;
+	}
+	99%,100%{
+		margin-left: -2950px;
+	}
+}

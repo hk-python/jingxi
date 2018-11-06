@@ -1,0 +1,86 @@
+{% extends 'user.html' %}
+{% load static from staticfiles %}
+{% block linkscript %}
+<script type="text/javascript" src="{%  static 'js/addres.js' %}"></script>
+<script>	function che1() {
+		usname=document.getElementById("uname").value
+		if (usname==""){
+		    alert("收货人不准为空！")
+		}
+    }</script>
+{% endblock linkscript %}
+{% block contents1 %}
+
+<div class="content fl ml10">
+			<div class="user_hd">
+
+				<h3>收货地址薄</h3>
+				<dl>
+					<dt>【默认地址】：<br>{{ addname }} {{ addres }}  {{ addtel }}</dt>
+					<br>
+					<dd>
+						<a href="javascript:;" id="address_modify" style="color: dodgerblue">修改</a>
+						<a href="/sqlapp/addelete" style="color: dodgerblue">删除</a>
+						<!--<a href="" style="color: dodgerblue">设为默认地址</a>-->
+					</dd>
+				</dl>
+
+
+			</div>
+
+				<div class="address_select none">
+					<ul>
+
+						<li class="cur">
+
+
+							</input>
+
+							<!--<a href="">删除</a>-->
+						</li>
+						<li><input type="radio" name="address" class="new_address"  />添加/修改收货地址</li>
+					</ul>
+				<form action="" class="none" name="address_form">
+						<ul>
+							<li>
+								<label for=""><span>*</span>收 货 人：</label>
+								<input type="text" name="uname" class="txt" id="uname" onblur="che1()"/>
+							</li>
+							<li>
+								<label for=""><span>*</span>所在地区：</label>
+								<select name="cmbProvince" id="cmbProvince" >
+								</select>
+
+								<select name="cmbCity" id="cmbCity">
+								</select>
+
+								<select name="cmbArea" id="cmbArea">
+								</select>
+							</li>
+							<li>
+								<label for=""><span>*</span>详细地址：</label>
+								<input type="text" name="address" class="txt address"  />
+							</li>
+							<li>
+								<label for=""><span>*</span>手机号码：</label>
+								<input type="text" name="tel" class="txt" />
+							</li>
+							<li>
+								<label for=""><span>*</span>邮政编码：</label>
+								<input type="text" name="apost" class="txt" />
+							</li>
+						</ul>
+						<!--<font class="confirm_btn" onclick="che3()"><span>保存收货人信息</span></font>-->
+					</form>
+			</div>
+</div>
+		<!-- 右侧内容区域 end -->
+
+
+
+
+
+
+
+
+{% endblock contents1 %}

@@ -1,0 +1,731 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>购物网站作品</title>
+<link type="text/css" rel="stylesheet" href="{% static 'style/play.css' %}">
+<style type="text/css">
+.A {
+	overflow: hidden;
+	width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	background-color: #FFFFFF;
+}
+.B {
+	width: 140px;
+	height: 50px;
+	margin-right: 10px;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+	float: left;
+}
+.C {
+	width: 700px;
+	height: 50px;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+	margin-left: 300px;
+	float: left;
+}
+.D {
+	width: 1200px;
+	height: 60px;
+	background-color: #FFFFFF;
+	float: left;
+	color: #000000;
+}
+.A .D input {
+	margin-top: 20px;
+	float: left;
+	margin-left: 500px;
+	width: 200px;
+	height: 20px;
+	margin-right: 5px;
+}
+.A .D a {
+	width: 50px;
+	height: 20px;
+	text-decoration: none;
+	float: left;
+	margin-top: 20px;
+	color: #FC2A2A;
+	font-size: 15px;
+}
+.A .D a:hover {
+	background-color: #F4C4C5;
+	border-radius: 5px;
+}
+.A .E {
+	width: 250px;
+	float: left;
+	height: 380px;
+	/*background-color: #B7B1B1;*/
+	color: #FFFFFF;
+	margin-top: 29px;
+    margin-left: 50px;
+	border-radius: 5px;
+}
+.E p a:hover  {
+	color: #FBFBFB;
+	text-decoration: none;
+	background-color: #4C4C4C;
+}
+.A .E p {
+	color: #000000;
+	/*background-color: #w;*/
+	margin-top: 9px;
+	margin-left: 2px;
+}
+.F {
+	height: 500px;
+	background-color: #FFFFFF;
+	margin-right: 10px;
+	float: left;
+	margin-top: 20px;
+}
+.G .G_3 .g_1:hover {
+	background-color: #FC9496;
+}
+.G .G_3 .g_2:hover {
+	background-color: #FC9496;
+}
+.G .G_3 .g_3:hover {
+	background-color: #FC9496;
+}
+.G .G_3 .g_4:hover {
+	background-color: #FC3B3E;
+}
+.G .G_3 .g_5:hover {
+	background-color: #FC3B3E;
+}
+.G .G_3 .g_6:hover {
+	background-color: #FC3B3E;
+}
+.G .G_3 .g_7:hover {
+	background-color: #F61114;
+}
+.G .G_3 .g_8:hover {
+	background-color: #F61114;
+}
+.G .G_3 .g_9:hover {
+	background-color: #F61114;
+}
+.G .G_3 .g_10:hover {
+	background-color: #BB0008;
+}
+.G .G_3 .g_11:hover {
+	background-color: #BB0008;
+}
+.G .G_3 .g_12:hover {
+	background-color: #BB0008;
+}
+.F .b a:hover {
+	background-color: #F9C8C8;
+}
+p b a {
+	color: #6F6F6F;
+}
+.G {
+	width: 290px;
+	height: 410px;
+	background-color: #FFFFFF;
+	float: left;
+	margin-bottom: 0px;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.A .G #g_a {
+	width: 290px;
+	height: 100px;
+}
+.G #g_a img {
+	width: 50px;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+}
+.F .b {
+	width: 590px;
+	display: inline-block;
+	text-align: center;
+	color: #F32225;
+	margin-left: 10px;
+	height: 390px;
+}
+.F .b a {
+}
+.H {
+	background-color: #FFFFFF;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+}
+.b a {
+	width: 70px;
+	display: inline-block;
+	text-decoration: none;
+	color: #F73D3D;
+	font-weight: normal;
+	font-size: 17px;
+}
+.G #G_1 img {
+	float: left;
+}
+.G #G_1 p {
+	width: 150px;
+	height: 20px;
+}
+.G #G_1 #submit {
+	/* [disabled]width: 50px; */
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.A .G .G_2 {
+	width: 290px;
+	height: 100px;
+	margin-top: 0px;
+}
+.G #G_1 #submit2 {
+}
+.A .G #G_1 {
+	height: 80px;
+	width: 290px;
+}
+.A .G .g_1 {
+	width: 90px;
+	height: 50px;
+	text-align: center;
+	background-color: #F8ACAD;
+	float: left;
+	border-radius: 10px;
+}
+.A .G .g_2 {
+	text-align: center;
+	width: 90px;
+	height: 50px;
+	margin-left: 10px;
+	float: left;
+	background-color: #F8ACAD;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+.A .G .G_3 {
+	width: 290px;
+	margin-top: 10px;
+	float: left;
+}
+.A .G .g_3 {
+	width: 90px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	background-color: #F8ACAD;
+	border-radius: 10px;
+}
+.A .G .g_4 {
+	width: 90px;
+	height: 50px;
+	margin-bottom: 10px;
+	background-color: #FD5356;
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+.A .G .g_5 {
+	width: 90px;
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	float: left;
+	background-color: #FD5356;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+.A .G .g_6 {
+	width: 90px;
+	height: 50px;
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	text-align: center;
+	background-color: #FD5356;
+	border-radius: 10px;
+}
+.A .G .g_7 {
+	width: 90px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	background-color: #F83033;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+.A .G .g_8 {
+	width: 90px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	background-color: #F83033;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+.A .G .g_9 {
+	width: 90px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	background-color: #F83033;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+.A .G .g_10 {
+	width: 90px;
+	height: 50px;
+	margin-bottom: 10px;
+	float: left;
+	text-align: center;
+	background-color: #F7171B;
+	border-radius: 10px;
+}
+.A .G .g_11 {
+	width: 90px;
+	height: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	float: left;
+	background-color: #F7171B;
+	border-radius: 10px;
+}
+.A .G .g_12 {
+	width: 90px;
+	height: 50px;
+	margin-bottom: 10px;
+	float: left;
+	text-align: center;
+	background-color: #F7171B;
+	border-radius: 10px;
+}
+.G_3 p {
+	margin-top: 15px;
+}
+.g_1 p a {
+	color: #2D2D2D;
+	text-decoration: none;
+}
+.g_2 p a {
+	color: #2D2D2D;
+	text-decoration: none;
+}
+.g_3 p a {
+	color: #2D2D2D;
+	text-decoration: none;
+}
+.g_4 p a {
+	color: #111111;
+	text-decoration: none;
+}
+.g_5 p a {
+	color: #111111;
+	text-decoration: none;
+}
+.g_6 p a {
+	color: #111111;
+	text-decoration: none;
+}
+.g_7 p a {
+	color: #090909;
+	text-decoration: none;
+}
+.g_8 p a {
+	color: #090909;
+	text-decoration: none;
+}
+.g_9 p a {
+	color: #090909;
+	text-decoration: none;
+}
+.g_10 p a {
+	color: #000000;
+	text-decoration: none;
+}
+.g_11 p a {
+	color: #000000;
+	text-decoration: none;
+}
+.g_12 p a {
+	color: #000000;
+	text-decoration: none;
+}
+.A .G .G_2 {
+	margin-top: 10px;
+	width: 290px;
+	height: 60px;
+}
+.H .H_1 {
+	width: 220px;
+	min-width: 0px;
+	height: 50px;
+	background-color: #FFFFFF;
+	float: left;
+	margin-left: 100px;
+	margin-right: 0px;
+	margin-top: 20px;
+}
+.H .H_2 {
+	margin-left: 30px;
+	margin-top: 20px;
+	width: 220px;
+	height: 50px;
+	background-color: #FFFFFF;
+	float: left;
+}
+.H .H_3 {
+	width: 220px;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 30px;
+	float: left;
+	background-color: #FFFFFF;
+}
+.H .H_4 {
+	margin-top: 20px;
+	margin-left: 30px;
+	float: left;
+	background-color: #FFFFFF;
+	width: 220px;
+	height: 50px;
+}
+.H .H_1 img {
+	float: left;
+}
+.H .H_2 img {
+	float: left;
+}
+.H .H_3 img {
+	float: left;
+}
+.H .H_4 img {
+	float: left;
+}
+.H .H_A_1 {
+	width: 175px;
+	height: 250px;
+	margin-left: 20px;
+	margin-top: 50px;
+	float: left;
+	background-color: #FFFFFF;
+}
+.H .H_A_2 {
+	width: 175px;
+	height: 250px;
+	margin-left: 20px;
+	margin-top: 50px;
+	background-color: #FFFFFF;
+	float: left;
+}
+.H .H_A_3 {
+	width: 175px;
+	height: 250px;
+	margin-top: 50px;
+	margin-left: 20px;
+	float: left;
+	background-color: #FFFFFF;
+}
+.H_A_4 p a {
+}
+.H .H_A_4 {
+	background-color: #FFFFFF;
+	width: 175px;
+	height: 250px;
+	margin-top: 50px;
+	margin-left: 20px;
+	float: left;
+}
+.H .H_A_5 {
+	width: 175px;
+	height: 250px;
+	margin-top: 50px;
+	margin-left: 20px;
+	float: left;
+	background-color: #FFFFFF;
+}
+.H .H_A_6 {
+	background-color: #FFFFFF;
+	width: 175px;
+	height: 250px;
+	margin-top: 50px;
+	margin-left: 20px;
+	float: left;
+}
+.H_B {
+	width: 1500px;
+	height: 100px;
+	margin-top: 20px;
+	margin-left: 180px;
+	margin-right: auto;
+	float: left;
+}
+.H_B a {
+	color: #535353;
+	text-decoration: none;
+	width: 95px;
+	display: inline-block;
+	height: 30px;
+}
+.H_A_1 p a {
+	color: #5F5959;
+	text-decoration: none;
+}
+.H_A_2 p a {
+	color: #5F5959;
+	text-decoration: none;
+}
+.H_A_3 p a {
+	color: #5F5959;
+	text-decoration: none;
+}
+.H_A_4 p a {
+	color: #5F5959;
+	text-decoration: none;
+}
+.H_A_5 p a {
+	color: #5F5959;
+	text-decoration: none;
+}
+.H_A_6 p a {
+	color: #686868;
+}
+.H .H_A_6 p {
+	color: #5F5959;
+}
+.F .b .banner {
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 590px;
+	height: 500px;
+}
+.E p a {
+	color: #292929;
+	text-decoration: none;
+	font-size: 18px;
+}
+.A .E li {
+}
+.goodslist{height: 1000px}
+.goodslist li{
+    float:left; display: inline; width: 225px; text-align: center; padding: 10px;
+  }
+.goodslist li img{width: 160px; height: 160px;}
+.goodslist dd{padding: 5px 0;}
+.goodslist strong{color: #c30; font-weight: bolder; }
+</style>
+
+</head>
+<script type="application/javascript">
+  function jump() {
+      username=document.getElementById("cart1").innerHTML
+      location="http://127.0.0.1:8000/sqlapp/cart/"+username
+
+  }
+  </script>
+
+<body>
+<div class="A">
+  <div class="B"><img src="{% static '_notes/logo.jpg' %}" width="200" height="50" alt=""/></div>
+<div class="C"><img src="{% static '_notes/1.jpg' %}" width="700" height="50" alt=""/></div>
+<div class="D" align="center">
+  <input type="search">
+  <a>搜索</a></div>
+<div class="E">
+  <p><a href="/sqlapp/jiadian/">家用电器</a></p>
+  <p><a href="/sqlapp/shouji/1/">手机</a>/
+  <a href="/sqlapp/wt/">运营商</a>/
+  <a href="/sqlapp/shuma/">数码</a>/
+  <a href="/sqlapp/diannao/">电脑</a>/
+  <a href="/sqlapp/bg/">办公</a></p>
+<p>
+<a href="//channel.jd.com/furniture.html">家具</a>
+/<a href="//channel.jd.com/home.html">家居</a>/
+<a href="channel.jd.com/decoration.html">家装</a>/
+<a href="//channel.jd.com/kitchenware.html">厨具</a>
+</p>
+<p>
+  <a href="//channel.jd.com/1315-1342.html">男装</a>/
+  <a href="//channel.jd.com/1315-1343.html">女装</a>/
+  <a href="//channel.jd.com/children.html">童装</a>/
+  <a href="//channel.jd.com/1315-1345.html">内衣</a>
+</p>
+<p>
+  <a href="//channel.jd.com/beauty.html">美妆个户</a>/
+  <a href="//channel.jd.com/pet.html">宠物</a>
+</p>
+<p>
+  <a href="//channel.jd.com/food.html">食品</a>/
+  <a href="//jiu.jd.com">酒类</a>/
+  <a href="//fresh.jd.com">生鲜</a>/
+  <a href="//china.jd.com">特产</a>
+</p>
+<p>
+  <a href="//channel.jd.com/1672-2599.html">礼品鲜花</a>/
+  <a href="//nong.jd.com">农资绿植</a>
+</p>
+<p>
+  <a href="//book.jd.com">图书</a>/
+  <a href="//mvd.jd.com">音像</a>/
+  <a href="//e.jd.com/ebook.html">电子书</a>
+</p>
+<p>
+  <a href="//jipiao.jd.com/">机票</a>/
+  <a href="//hotel.jd.com/">酒店</a>/
+  <a href="//trip.jd.com/">旅游</a>/
+  <a href="//ish.jd.com/">生活</a>
+</p>
+<p>
+  <a href="//licai.jd.com/">理财</a>/
+  <a href="//z.jd.com/">众酬</a>/
+  <a href="//baitiao.jd.com">白条</a>/
+  <a href="//bao.jd.com/">保险</a>
+</p>
+</div>
+<div class=" F">
+  <div class="b">
+    <a href="panic buying.html">秒杀</a> 
+    <a href="BOSS3.html">拍卖</a> 
+    <a href="flash buying.html">闪购</a> 
+    <a href="clothing.html">京东服饰</a> 
+    <a href="BOSS3.html">京东超市</a> 
+    <a href="#">生鲜</a> 
+    <a href="#">全球购</a> 
+    <!--<a href="#">京东经融</a>-->
+    
+   <div class="banner">
+<div>
+  <img src="{% static 'photo/d.jpg' %}" width="590" height="340" alt=""/><img src="{% static 'photo/e.jpg' %}" width="590" height="340" alt=""/><img src="{% static 'photo/f.jpg' %}" width="590" height="340" alt=""/><img src="{% static 'photo/g.jpg' %}" width="590" height="340" alt=""/><img src="{% static 'photo/c.jpg' %}" width="590" height="340" alt=""/><img src="{% static 'photo/d.jpg' %}" width="590" height="340" alt=""/></div></div>
+    </div>
+    </div>
+<div class="G">
+ 
+  <div id="G_1">
+    <img src="{% static '_notes/5.jpg' %}" width="50" height="50" alt=""/>
+    <p id="cart1"><a href="/sqlapp/user/">{{ username }}</a></p>
+  <a href="/sqlapp/login/">登录</a>
+  <a href="/sqlapp/register/">注册</a>
+    <a href="/sqlapp/cart/">购物车</a>
+  </div>
+  <div class="G_2"><P align="center"> <font size="+3" color="#F319E4">圣诞劲爆好礼品</font></P></div>
+<div class="G_3">
+  <div class="g_1"><p><a href="//chongzhi.jd.com/">话费</a></p></div>
+<div class="g_2"><p><a href="//jipiao.jd.com/">机票</a></p></div>
+<div class="g_3"><p><a href="//hotel.jd.com/">酒店</a></p></div>
+<div class="g_4"><p><a href="//game.jd.com/">游戏</a></p></div>
+<div class="g_5"><p><a href="https://b.jd.com/">企业购</a></p></div>
+<div class="g_6"><p><a href="https://passport.jd.com/new/login.aspx?ReturnUrl=https%3A//jiayouka.jd.com/">加油卡</a></p></div>
+
+<div class="g_7"><p><a href="https://movie.jd.com/index.html">电影票</a></p></div>
+<div class="g_8"><p><a href="https://train.jd.com/">火车票</a></p></div>
+<div class="g_9"><p><a href="https://z.jd.com/sceneIndex.html?from=jrscyn_20162">筹码</a></p></div>
+<div class="g_10"><p><a href="https://licai.jd.com/?from=jrscyn_20161">理财</a></p></div>
+<div class="g_11"><p><a href="https://o.jd.com/market/index.action">礼品卡</a></p></div>
+<div class="g_12"><p><a href="https://baitiao.jd.com/?from=jrscyn_20160">白条
+	</a></p></div></div>
+  </div>
+</div>
+
+<!--<div class="goodslist">-->
+  				<!--<ul>-->
+					<!--{% for sel in sell %}-->
+					<!--<li>-->
+						<!--<dl>-->
+							<!--<dd><a href=""><img src="/static/images/{{ sel.sellimg }}" alt="" /></a></dd>-->
+							<!--<dd><a href="">{{ sel.sellname }}</a></dd>-->
+							<!--<dd><strong>￥{{ sel.selljiage }}</strong></dd>-->
+							<!--<dd><a href="/sqlapp/comms/{{ sel.sellid }}/" style="display: inline-block; width: 72px; height: 25px; line-height: 25px; text-align: center; color: #fff; background: #E4393C; border-radius: 3px; -webkit-border-radius:3px; cursor:pointer;">立即抢购</a></dd>-->
+						<!--</dl>-->
+					<!--</li>-->
+					<!--{% endfor %}-->
+				<!--</ul>-->
+
+
+<!--</div>-->
+
+<div class="H">
+        <div class="H_1"><img src="{% static '_notes/7.jpg' %}" width="50" height="51" alt=""/><p><b>品类齐全，轻松购物</b></p></div>
+  <div class="H_2"><img src="{% static '_notes/8.jpg' %}" width="50" height="51" alt=""/><p><b>多仓首发，急速配送</b></p></div>
+  <div class="H_3"><img src="{% static '_notes/9.jpg' %}" width="50" height="51" alt=""/><p><b>正品行货，精致服务</b></p></div>
+  <div class="H_4"><img src="{% static '_notes/10.jpg' %}" width="50" height="51" alt=""/><p><b>天天低价，畅选无忧</b></p></div>
+  <div class="H_A_1" align="center">
+  <P><b><a href="#">购物指南</a></b></P>
+  <P><a href="#">购物流程</a></P>
+  <P><a href="#">生活旅行</a></P>
+  <P><a href="#">常见问题</a></P>
+  <P><a href="#">大家见</a></P>
+  <P><a href="#">联系客服</a></P>
+  </div>
+  <div class="H_A_2" align="center">
+  <P><b><a href="#">配送方式</a></b></P>
+  <P><a href="#">上门自提</a></P>
+  <P><a href="#">211限时达</a></P>
+  <P><a href="#">配送服务查询</a></P>
+  <P><a href="#">配送费收取标准</a></P>
+  <P><a href="#">海外配送</a></P>
+  </div>
+  <div class="H_A_3" align="center">
+  <P><b><a href="#">支付方式</a></b></P>
+  <P><a href="#">货到付款</a></P>
+  <P><a href="#">在线支付</a></P>
+  <P><a href="#">分期汇款</a></P>
+  <P><a href="#">邮政汇款</a></P>
+  <P><a href="#">公司转账</a></P>
+  </div>
+  <div class="H_A_4" align="center">
+  <P><b><a href="#">售后服务</a></b></P>
+  <P><a href="#">售后政策</a></P>
+  <P><a href="#">价格保护</a></P>
+  <P><a href="#">退款说明</a></P>
+  <P><a href="#">返修/退换货</a></P>
+  <P><a href="#">取消订单</a></P>
+  </div>
+  <div class="H_A_5" align="center">
+  <P><b><a href="#">特色服务</a></b></P>
+  <P><a href="#">夺宝岛</a></P>
+  <P><a href="#">DIY换机</a></P>
+  <P><a href="#">延保服务</a></P>
+  <P><a href="#">京东E卡</a></P>
+  <P><a href="#">京东通信</a></P>
+  <P><a href="#">京东JD+</a></P>
+  </div>
+  <div class="H_A_6" align="center">
+  <P><B><a href="#">京东自营覆盖区域</a></B></P>
+  <P>京东已向全国2661个区县提供县配送服务，支持到货付款，POS机刷卡和售后上门服务..... <a href="#">查看详情>></a></P>
+  </div>
+</div>
+<div class="H_B">
+<a href="#">关于我们</a> 
+<a href="#">联系我们</a> 
+<a href="#">服务客服</a> 
+<a href="#">合作指南</a> 
+<a href="#">营销帮助</a> 
+<a href="#">手机京东</a> 
+
+<a href="#">友情链接</a> 
+<a href="#">销售联盟</a>
+ <a href="#">京东社区</a> 
+ <a href="#">风险监测</a> 
+ <a href="#">营私政策</a> 
+ <a href="#">京东公益</a> 
+ <!--<a href="#">English site</a> -->
+ <!--<a href="#">Media & IR</a>-->
+ </div>
+</body>
+</html>

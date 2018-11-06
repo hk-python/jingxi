@@ -1,0 +1,67 @@
+{% extends 'user.html' %}
+
+{% block contents1 %}
+<div class="content fl" >
+			<div class="user_hd">
+
+				<h3>我的订单</h3>
+			</div>
+
+			<div class="user_bd mt10">
+				<form action="" method="post">
+					<ul>
+						<li>
+							<label for="">用户名：</label>
+							<strong>{{ username }}</strong>
+						</li>
+                        <li>
+							<label for="">收货人：</label>
+							<strong>{{ adname }}</strong>
+						</li>
+						<li>
+							<label for="">地址：</label>
+							<strong>{{ addre }}</strong>
+						</li>
+						<li>
+							<label for="">手机号码：</label>
+							<strong>{{ adtel }}</strong>
+						</li>
+					</ul>
+				</form>
+						<table>
+			<thead>
+				<tr>
+					<th class="col1">商品名称</th>
+					<th class="col2">商品信息</th>
+					<th class="col3">单价</th>
+					<th class="col4">数量</th>
+					<th class="col5">小计</th>
+					<th class="col6">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+			{% for n in ca %}
+					<tr>
+						<td class="col1"><a href=""><img style="width: 80px;height: 80px" src="/static/image/{{ n.cartimg }}/" alt="" /></a>  <strong ><a href=" ">{{ n.cartname }}</a></strong></td>
+						<td class="col2"> <p>颜色:{{ n.cartcolor }}</p> <p>规格:{{ n.cartsize }}</p> </td>
+						<td class="col3">￥<span>{{ n.cartjiage }}</span></td>
+						<td class="col4">
+							<a href="javascript:;" class="reduce_num"></a>
+							<font name="amount" class="amount">&nbsp;{{ n.cartsellnum }}</font>
+							<a href="javascript:;" class="add_num"></a>
+						</td>
+						<td class="col5">￥<span>{{ n.cartsellnum }}*{{ n.cartjiage }}</span></td>
+						<td class="col5" id="{{ n.cartsid }}"><a href="" style="color: dodgerblue">取消订单</a></td>
+					</tr>
+			{% endfor %}
+
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="6">购物金额总计： <strong style="color: #e4393c">￥ <span id="total">{{ dllo }}</span></strong></td>
+				</tr>
+			</tfoot>
+		</table>
+			</div>
+		</div>
+{% endblock %}
